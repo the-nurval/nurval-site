@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nurval — Case</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#563789}
+.wrap{max-width:1120px;margin:0 auto;padding-left:clamp(20px,4vw,40px);padding-right:clamp(20px,4vw,40px);box-sizing:border-box}
+.d{font-family:'Outfit',sans-serif;font-weight:700;letter-spacing:-0.01em}
+.ph{background:#E8E6E1;display:flex;align-items:center;justify-content:center;color:#5E5B55;font-size:13px;text-align:center;padding:12px;box-sizing:border-box}
+.tag{position:relative;display:inline-block;padding:8px 16px;font-family:'Outfit',sans-serif;font-weight:600;font-size:15px;text-decoration:none;color:#111111;isolation:isolate}
+.tag::before{content:"";position:absolute;left:-4px;top:4px;width:64px;height:28px;background:#6D47A7;opacity:.9;transform:skewY(16deg) skewX(-24deg);z-index:-1}
+.tag:hover{color:#111111}
+.blob{border-radius:58% 42% 46% 54% / 50% 56% 44% 50%;animation:blobMorph 14s ease-in-out infinite alternate,blobDrift 22s ease-in-out infinite alternate}
+@keyframes blobMorph{0%{border-radius:58% 42% 46% 54% / 50% 56% 44% 50%}25%{border-radius:44% 56% 60% 40% / 58% 44% 56% 42%}50%{border-radius:52% 48% 38% 62% / 42% 60% 40% 58%}75%{border-radius:40% 60% 54% 46% / 56% 40% 60% 44%}100%{border-radius:56% 44% 48% 52% / 46% 54% 46% 54%}}
+@keyframes blobDrift{0%{transform:translate(0,0) rotate(0deg)}33%{transform:translate(4px,-4px) rotate(8deg)}66%{transform:translate(-4px,4px) rotate(-6deg)}100%{transform:translate(4px,4px) rotate(4deg)}}
+@media (prefers-reduced-motion: reduce){.blob{animation:none}}
+.blk{background:#F5F4F1;padding:32px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px}
+</style>
+</helmet>
+<div style="font-family: 'Roboto', sans-serif; color: #111111; background: #FFFFFF; font-size: 16px; line-height: 1.6">
+
+<header class="wrap" style="max-width: 1440px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; gap: 16px; padding-top: 20px; padding-bottom: 20px">
+<div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap">
+<button type="button" class="d blob" style="width: 64px; height: 64px; border: 0; background: #6D47A7; color: #FFFFFF; font-size: 12px; letter-spacing: 0.04em; cursor: pointer">MENU</button>
+<nav aria-label="Main" class="d" style="display: flex; gap: 16px; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase"><a href="StyleHome.dc.html#services" style="text-decoration: none">Services</a><a href="StyleWork.dc.html" style="text-decoration: none; color: #6D47A7">Work</a><a href="StyleGifts.dc.html" style="text-decoration: none">Gifts</a></nav>
+</div>
+<a href="StyleHome.dc.html" aria-label="Nurval home" style="justify-self: center; display: flex"><img src="/_blob/18ba6b87fa575f4c9dcc2e3c516bbff2" alt="Nurval" style="height: 32px; width: auto"></a>
+<a href="#contact" style="justify-self: end; display: flex; align-items: center; gap: 12px; text-decoration: none; font-size: 14px"><span><strong>Nurval</strong> Contact</span><span aria-hidden="true" style="width: 36px; height: 36px; border-radius: 50%; background: #6D47A7"></span></a>
+</header>
+
+<section class="wrap" style="padding-top: 48px; padding-bottom: 48px; display: flex; flex-direction: column; gap: 16px">
+<nav aria-label="Breadcrumb" style="font-size: 14px; color: #8A8780"><a href="StyleWork.dc.html" style="color: #8A8780">Work</a> / <span>Case</span></nav>
+<h1 class="d" style="margin: 0; font-size: 56px; line-height: 1.05; max-width: 800px">[Client type, e.g. "Restaurant chain"]</h1>
+<p style="margin: 0; max-width: 640px; color: #8A8780">[Короткое описание проекта: 1–2 предложения]</p>
+</section>
+
+<section class="wrap" style="padding-bottom: 64px">
+<div class="ph" style="height: 560px">Main project photo</div>
+</section>
+
+<section class="wrap" style="padding-bottom: 64px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+<div class="blk"><span class="d" style="font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; color: #6D47A7">Task</span><p style="margin: 0; color: #8A8780">[Что нужно было клиенту, сроки или ограничения]</p></div>
+<div class="blk"><span class="d" style="font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; color: #6D47A7">Solution</span><p style="margin: 0; color: #8A8780">[Технология, материал, что сделали помимо печати]</p></div>
+<div class="blk"><span class="d" style="font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; color: #6D47A7">Result</span><p style="margin: 0; color: #8A8780">[Тираж, доставка, что получил клиент]</p></div>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom: 64px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+<div class="ph" style="aspect-ratio: 4 / 5">Detail photo</div>
+<div class="ph" style="aspect-ratio: 4 / 5">Detail photo</div>
+<div class="ph" style="aspect-ratio: 4 / 5">Detail photo</div>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom: 96px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<a href="StyleWork.dc.html" style="font-weight: 500">← All work</a>
+<div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap">
+<span class="d" style="font-size: 22px">Need something similar?</span>
+<a href="#contact" class="tag">Send a request</a>
+</div>
+</section>
+
+<footer id="contact" class="wrap" style="padding-bottom: 48px; display: flex; flex-wrap: wrap; gap: 32px">
+<div style="flex: 1 1 420px; min-width: 0; background: #6D47A7; color: #FFFFFF; padding: 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px">
+<h2 class="d" style="margin: 0; flex: 1 1 200px; font-size: 24px; line-height: 1.2">Let's talk about your project</h2>
+<div style="flex: 1 1 160px; font-size: 14px; display: flex; flex-direction: column; gap: 4px"><span>[e-mail]</span><span>[телефон]</span><span>[реквизиты фирмы]</span></div>
+</div>
+<div style="flex: 1 1 420px; min-width: 0; background: #F5F4F1; padding: 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; font-size: 14px">
+<div class="d" style="display: flex; flex-direction: column; gap: 4px; font-weight: 700; text-transform: uppercase; font-size: 13px; letter-spacing: 0.04em"><a href="StyleHome.dc.html#services" style="text-decoration: none">Services</a><a href="StyleWork.dc.html" style="text-decoration: none">Work</a><a href="StyleGifts.dc.html" style="text-decoration: none">Corporate gifts</a></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><a href="#contact" style="text-decoration: none">Contact</a><a href="#" style="text-decoration: none">Privacy policy</a></div>
+<img src="/_blob/18ba6b87fa575f4c9dcc2e3c516bbff2" alt="Nurval" style="height: 28px; width: auto; align-self: flex-start">
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2900}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

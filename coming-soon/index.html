@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nurval — website coming soon</title>
+<meta name="description" content="Nurval OÜ, Tallinn — print services for businesses. Our new website is coming soon.">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111111;--muted:#4A4741;--accent:#6D47A7;--bg:#FFFFFF;--soft:#F5F4F1}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font-family:'Roboto',system-ui,sans-serif;font-size:16px;line-height:1.6;display:flex;flex-direction:column;min-height:100vh}
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:160px 20px;position:relative;overflow:hidden;isolation:isolate}
+.box{position:relative;isolation:isolate;max-width:560px;width:100%;display:flex;flex-direction:column;align-items:flex-start;gap:24px}
+.logo{height:40px;width:auto;color:#222020}
+h1{margin:0;font-family:'Outfit',sans-serif;font-weight:700;font-size:clamp(32px,6vw,48px);line-height:1.1;letter-spacing:-0.01em}
+p{margin:0;color:var(--muted)}
+a{color:var(--ink)}a:hover{color:var(--accent)}
+.blob,.soft,.side{position:absolute;z-index:-1;aspect-ratio:1/1;animation:morph 14s ease-in-out infinite alternate,drift 26s ease-in-out infinite alternate}
+.blob{width:320px;right:-240px;top:-140px;background:var(--accent);opacity:.9;border-radius:58% 42% 46% 54% / 50% 56% 44% 50%}
+.soft{width:240px;left:-180px;bottom:-140px;background:var(--soft);border-radius:46% 54% 58% 42% / 54% 44% 56% 46%;animation-direction:alternate-reverse}
+.side{border-radius:52% 48% 40% 60% / 44% 58% 42% 56%}
+.side-l{width:120px;left:6vw;top:16vh;background:var(--soft);animation-duration:18s,30s}
+.side-r{width:64px;right:8vw;bottom:18vh;background:var(--accent);opacity:.6;animation-duration:16s,24s;animation-direction:alternate-reverse}
+@keyframes morph{0%{border-radius:58% 42% 46% 54% / 50% 56% 44% 50%}25%{border-radius:44% 56% 60% 40% / 58% 44% 56% 42%}50%{border-radius:52% 48% 38% 62% / 42% 60% 40% 58%}75%{border-radius:40% 60% 54% 46% / 56% 40% 60% 44%}100%{border-radius:56% 44% 48% 52% / 46% 54% 46% 54%}}
+@keyframes drift{0%{transform:translate(0,0) rotate(0)}33%{transform:translate(-16px,12px) rotate(8deg)}66%{transform:translate(12px,-12px) rotate(-6deg)}100%{transform:translate(-8px,-16px) rotate(4deg)}}
+@media (prefers-reduced-motion:reduce){.blob,.soft,.side{animation:none}}
+@media (max-width:900px){.side{display:none}}
+@media (max-width:640px){main{padding-left:40px;padding-right:40px}.blob{width:200px;right:-120px;top:-200px}.soft{width:160px;left:-100px;bottom:-160px}}
+.timer{display:flex;align-items:flex-start;gap:4px;margin:8px 0 0 -8px}
+.timer div{display:flex;flex-direction:column;align-items:center;gap:4px;width:64px}
+.timer b{font-family:'Outfit',sans-serif;font-weight:700;font-size:40px;line-height:1;font-variant-numeric:tabular-nums}
+.timer span{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.timer i{font-family:'Outfit',sans-serif;font-style:normal;font-weight:700;font-size:40px;line-height:1;color:var(--ink)}
+@media (max-width:640px){.timer b,.timer i{font-size:32px}}
+footer{padding:24px 20px;font-size:14px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<main>
+<div class="side side-l" aria-hidden="true"></div>
+<div class="side side-r" aria-hidden="true"></div>
+<div class="box">
+<div class="blob" aria-hidden="true"></div>
+<div class="soft" aria-hidden="true"></div>
+<svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="64.38 256.82 124.22 43.30" role="img" aria-label="Nurval"><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 85.964844 278.589844 L 85.964844 294.625 C 85.964844 300.121094 77.632812 300.121094 77.632812 294.738281 L 77.632812 278.589844 C 77.632812 277.257812 76.644531 276.042969 75.140625 276.042969 C 73.695312 276.042969 72.710938 277.257812 72.710938 278.589844 L 72.710938 294.625 C 72.710938 300.121094 64.375 300.121094 64.375 294.738281 L 64.375 278.589844 C 64.375 272.800781 69.238281 267.707031 75.140625 267.707031 C 81.046875 267.707031 85.964844 272.800781 85.964844 278.589844 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 100.613281 271.933594 C 100.613281 266.605469 108.832031 266.605469 108.832031 271.933594 L 108.832031 288.3125 C 108.832031 294.160156 104.085938 299.023438 98.179688 299.023438 C 92.277344 299.023438 87.644531 294.160156 87.644531 288.253906 L 87.644531 271.933594 C 87.644531 266.605469 95.867188 266.605469 95.867188 271.933594 L 95.867188 288.3125 C 95.75 289.703125 96.851562 290.917969 98.179688 290.917969 C 99.511719 290.917969 100.613281 289.761719 100.613281 288.429688 Z M 100.613281 271.933594 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 110.570312 278.703125 C 110.570312 272.800781 115.375 267.820312 121.335938 267.820312 C 123.652344 267.820312 125.792969 268.632812 126.429688 271.0625 C 127.066406 273.726562 125.039062 276.851562 121.566406 276.101562 C 120.121094 275.867188 118.847656 277.199219 118.847656 278.648438 L 118.847656 294.679688 C 118.847656 300.121094 110.570312 300.121094 110.570312 294.625 Z M 110.570312 278.703125 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 139.628906 285.855469 C 139.917969 285.453125 140.03125 284.875 140.03125 284.351562 L 140.03125 271.734375 C 140.03125 266.464844 148.25 266.464844 148.25 271.792969 L 148.25 284.292969 C 148.25 286.667969 147.558594 289.097656 146.050781 290.894531 L 140.785156 297.203125 C 139.164062 299.171875 136.210938 299.171875 134.589844 297.203125 L 129.382812 290.894531 C 127.820312 289.097656 127.125 286.667969 127.125 284.292969 L 127.125 271.792969 C 127.125 266.464844 135.34375 266.464844 135.34375 271.734375 L 135.34375 284.351562 C 135.34375 284.875 135.402344 285.453125 135.808594 285.855469 L 137.714844 288.117188 Z M 139.628906 285.855469 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 158.558594 280.527344 C 158.265625 280.933594 158.152344 281.511719 158.152344 282.035156 L 158.152344 294.652344 C 158.152344 299.917969 149.933594 299.917969 149.933594 294.59375 L 149.933594 282.089844 C 149.933594 279.71875 150.625 277.285156 152.132812 275.492188 L 157.398438 269.183594 C 159.019531 267.214844 161.972656 267.214844 163.59375 269.183594 L 168.800781 275.492188 C 170.367188 277.285156 171.058594 279.71875 171.058594 282.089844 L 171.058594 294.59375 C 171.058594 299.917969 162.839844 299.917969 162.839844 294.652344 L 162.839844 282.035156 C 162.839844 281.511719 162.78125 280.933594 162.378906 280.527344 L 160.46875 278.269531 Z M 158.558594 280.527344 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 181.015625 288.140625 C 181.015625 289.472656 181.769531 290.570312 183.042969 290.570312 C 188.597656 290.6875 188.078125 298.847656 182.871094 298.847656 C 177.136719 298.847656 172.738281 293.929688 172.738281 288.082031 L 172.738281 262.324219 C 172.738281 256.824219 180.957031 256.882812 181.015625 262.324219 Z M 181.015625 288.140625 "/></svg>
+<h1>Our website is under construction</h1>
+<p>We'll be online soon. In the meantime, write to us at <a href="mailto:info@nurval.ee">info@nurval.ee</a>.</p>
+<div class="timer" role="timer" aria-label="Time until launch">
+<div><b id="t-d">10</b><span>days</span></div>
+<i aria-hidden="true">:</i>
+<div><b id="t-h">15</b><span>hours</span></div>
+<i aria-hidden="true">:</i>
+<div><b id="t-m">38</b><span>minutes</span></div>
+<i aria-hidden="true">:</i>
+<div><b id="t-s">42</b><span>seconds</span></div>
+</div>
+</div>
+</main>
+<footer>Nurval OÜ · Tallinn</footer>
+<script>
+(function(){
+var target=Date.parse('2026-11-17T04:39:29+02:00');
+var el={d:document.getElementById('t-d'),h:document.getElementById('t-h'),m:document.getElementById('t-m'),s:document.getElementById('t-s')};
+function pad(n){return n<10?'0'+n:''+n}
+function tick(){
+var left=Math.max(0,Math.floor((target-Date.now())/1000));
+el.d.textContent=Math.floor(left/86400);
+el.h.textContent=pad(Math.floor(left%86400/3600));
+el.m.textContent=pad(Math.floor(left%3600/60));
+el.s.textContent=pad(left%60);
+if(left===0)clearInterval(timer);
+}
+var timer=setInterval(tick,1000);tick();
+})();
+</script>
+</body>
+</html>
